@@ -41,3 +41,21 @@ export const globalData = async () => {
     return error;
   }
 };
+
+export const chartData = async () => {
+  try {
+    const summaryResponse = await axios.get(summaryUrl);
+    const datesArray = [];
+    const confirmedArray = [];
+    const deathsArray = [];
+    const data = summaryResponse.data;
+    for (let i = 0; i < data.length; i += 2) {
+      confirmedArray.push(data[i].totalConfirmed);
+      deathsArray.push(data[i].deaths.total);
+      datesArray.push(data[i].reportDate);
+    }
+    return { datesArray, confirmedArray, deathsArray };
+  } catch (error) {
+    return error;
+  }
+};

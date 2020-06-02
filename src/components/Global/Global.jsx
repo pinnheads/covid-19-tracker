@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { globalData } from '../../api/global';
 import { Waypoint } from 'react-waypoint';
+import Chart from './Charts/Chart';
 import styles from './Global.module.css';
 import Card from './Cards/Cards';
 
@@ -38,7 +39,6 @@ export default function Global() {
     });
   }
 
-  console.log(globalStats);
   return (
     <div>
       <Waypoint onEnter={getGlobalData} />
@@ -63,6 +63,10 @@ export default function Global() {
           date={globalStats.lastUpdateDate}
           time={globalStats.lastUpdateTime}
         />
+      </div>
+
+      <div>
+        <Chart />
       </div>
     </div>
   );
