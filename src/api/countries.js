@@ -13,6 +13,5 @@ export const countries = async () => {
       label: point.name,
     });
   });
-  console.log(country);
   return country;
 };

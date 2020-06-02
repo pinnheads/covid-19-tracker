@@ -1,6 +1,5 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import Select from 'react-select';
-import { Waypoint } from 'react-waypoint';
 import { countries } from '../../api/countries';
 
 export default function SearchBar() {
