@@ -1,5 +1,6 @@
 import React from 'react';
 import Global from './components/Global/Global';
+import GithubCorner from 'react-github-corner';
 import SearchBar from './components/Search/SearchBar';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <hr />
       <h2 className='search-heading'>Search for a Country</h2>
       <SearchBar />
+      <GithubCorner href='https://github.com/pinnheads' />
     </div>
   );
 }
