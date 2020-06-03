@@ -1,0 +1,18 @@
+.button {
+  margin: 15px;
+  font-size: 1.2rem;
+  padding: 5px 20px;
+  background-color: #1578d4;
+  color: aliceblue;
+  border-radius: 5px;
+  border: 1px solid aliceblue;
+  box-shadow: inset;
+}
+
+.doughnut {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  border-bottom: 7px solid #cc0ca2;
+  padding: 10px;
+}

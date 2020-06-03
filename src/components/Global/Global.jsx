@@ -42,7 +42,7 @@ export default function Global() {
   return (
     <div>
       <Waypoint onEnter={getGlobalData} />
-      <div className={styles.container}>
+      <div className={styles.container} id='card-container'>
         <Card
           heading='Confirmed'
           total={globalStats.totalConfirmed}

@@ -6,9 +6,11 @@ function App() {
   return (
     <div>
       <h1 className='main-heading'>COVID-19</h1>
+      <hr />
       <h2 className='global-heading'>Global Data</h2>
       <Global />
-      <h2 className='search-heading'>Search</h2>
+      <hr />
+      <h2 className='search-heading'>Search for a Country</h2>
       <SearchBar />
     </div>
   );

@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { chartData } from '../../../api/global';
 import { Waypoint } from 'react-waypoint';
-// import { Line } from 'react-chartjs-2';
 import Chartjs from 'chart.js';
 
 const chartConfig = {

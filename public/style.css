@@ -1,18 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #ebedeb;
-  background-image: url('assets/images/coronavirus/3599609.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #000000;
+  background-image: url("assets/images/coronavirus/45-degree-fabric-light.png");
   background-attachment: fixed;
-  background-position: center;
   text-align: center;
+}
+
+#mobile-only {
+  display: none;
 }
 
 #root {
@@ -61,67 +66,8 @@ body {
     monospace;
 }
 
-.image-hand {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 5px;
-  position: fixed;
-  bottom: 0;
-  left: 80px;
-  width: 200px;
-}
-
-.image-mask {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 5px;
-  z-index: -1;
-  position: fixed;
-  top: 0;
-  left: 80px;
-  width: 200px;
-}
-
-.image-wash {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 5px;
-  position: fixed;
-  top: 350px;
-  left: 80px;
-  width: 200px;
-}
-
-.image-calender {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 5px;
-  position: fixed;
-  bottom: 0;
-  right: 80px;
-  width: 200px;
-}
-
-.image-virus {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 5px;
-  position: fixed;
-  top: 0;
-  right: 80px;
-  width: 200px;
-}
-
-.image-shake {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 5px;
-  position: fixed;
-  top: 350px;
-  right: 80px;
-  width: 200px;
-}
 
 @media only screen and (min-width:860px) and (max-width: 1435px) {
-  img {
-    display: none;
-    width: 150px;
-  }
-
   .main-heading {
     font-size: 4rem;
   }
@@ -136,12 +82,18 @@ body {
 
   #root {
     background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
   }
 
   body {
-    background-color: #ebedeb;
-    background-size: cover;
-    background-position: center;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
     text-align: center;
   }
 }
@@ -151,22 +103,36 @@ body {
     display: none;
   }
 
-  img {
-    display: none;
-  }
-
   .main-heading {
     font-size: 4rem;
   }
 
+  #card-container {
+    padding: 0 30px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
   #root {
     background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
   }
 
   body {
-    background-color: #ebedeb;
-    background-size: cover;
-    background-position: center;
+    background-color: #000;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .doughnut-container {
+    display: none;
   }
 }

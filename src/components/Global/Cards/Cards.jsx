@@ -27,7 +27,7 @@ export default function Card(props) {
           duration={2}
         />{' '}
         <span className={styles.increase} style={{ fontSize: '15px' }}>
-          since last update
+          since yesterday
         </span>
       </div>
       <div className={styles.date} style={{ fontSize: '1.2rem' }}>
