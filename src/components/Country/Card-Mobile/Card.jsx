@@ -10,7 +10,7 @@ export default function Card(props) {
     <div className={styles.container} id='mobile-only'>
       <div id='mobile-container'>
         <p>{country}</p>
-        <div>
+        <div id='internal'>
           <span className={styles.text}>Total: </span>
           <CountUp
             className={styles.total}

@@ -14,7 +14,11 @@ body {
   background-color: #000000;
   background-image: url("assets/images/coronavirus/45-degree-fabric-light.png");
   background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  min-height: 100vh;
   margin: 0;
 }
 
@@ -22,22 +26,18 @@ body {
   display: none;
 }
 
-#page-container {
-  position: relative;
-  min-height: 100vh;
-}
-
 #root {
   /* background-color: rgba(255, 255, 255, 0.5); */
   font-family: 'Source Sans Pro',
     sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 50vh;
-  padding-bottom: 23px;
 }
 
+/* #card-container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+} */
 
 #chart {
   background-color: rgb(255, 255, 255);
@@ -88,22 +88,10 @@ body {
     font-size: 2.5rem;
   }
 
-  #root {
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+  #chart {
+    display: none;
   }
 
-  body {
-    background-color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    text-align: center;
-  }
 }
 
 @media only screen and (max-width: 858px) {
@@ -115,26 +103,30 @@ body {
     font-size: 4rem;
   }
 
-  #mobile-only {
+  #root {
+    background-color: transparent;
     display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  #mobile-only {
+    display: block;
+    max-width: 90%;
+    text-align: center;
   }
 
 
   #card-container {
-    padding: 0 30px;
-    display: block;
+    padding: 2px;
+    display: inline-block;
+    text-align: center;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
   }
 
-  #root {
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-  }
 
   body {
     background-color: #000;
